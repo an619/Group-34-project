@@ -51,7 +51,7 @@ h1 img{
 
 /* გვერდის მთავარი ნაწილი */
 main{
-    padding-top: 200px;
+    padding-top: 150px;
     padding-left: 10px;
 }
 
@@ -66,7 +66,7 @@ h2 {
 p {
    line-height: 0.9cm;
    font-size: 20px;
-   color: rgba(255, 255, 255, 0.774);
+   color: rgba(255, 255, 255, 0.836);
 }
 
 section a {

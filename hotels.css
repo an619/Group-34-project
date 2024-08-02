@@ -1,15 +1,12 @@
-body {margin: 0;
+body {
+    margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-image: url('https://cdn.discordapp.com/attachments/1119327807777022106/1268541555791233146/background.jpg?ex=66accce3&is=66ab7b63&hm=a89a77d3f61b14bd7f47d8687a715a25988bb6e3bb14203165df1c9c16653d53&');
     background-size: cover;
     background-position: center;
-    color: #fff;}
-
-*{
-    font-family: "Poppins", sans-serif ;
+    color: #fff;
 }
-
 
 header {
     z-index: 3;
@@ -73,6 +70,14 @@ h1 img{
 main {
     padding-top: 150px;
     text-align: center;
+}
+
+main h2{
+    text-align: center;
+    color: #000000;
+    font-family: 'Paytone One', sans-serif;
+    padding-bottom: 40px;
+    font-size: 30px;
 }
 
 .hotel p img{
