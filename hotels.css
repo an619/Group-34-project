@@ -1,0 +1,145 @@
+body {margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.discordapp.com/attachments/1119327807777022106/1268541555791233146/background.jpg?ex=66accce3&is=66ab7b63&hm=a89a77d3f61b14bd7f47d8687a715a25988bb6e3bb14203165df1c9c16653d53&');
+    background-size: cover;
+    background-position: center;
+    color: #fff;}
+
+*{
+    font-family: "Poppins", sans-serif ;
+}
+
+
+header {
+    z-index: 3;
+    position: fixed;
+    padding-top: 15px;
+    display: flex;
+    padding-left: 270px;
+    text-align: center;
+    background-color: #5496fa;
+    padding-right: 250px;
+}
+
+header h1 {
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header ul {
+    margin-top: 30px;
+    padding-left: 250px;
+    list-style: none;
+    display: flex;
+}
+
+header ul li a{
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: ease .40s;
+    text-decoration: none;
+}   
+
+header ul li a:hover{
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+#user:hover{
+    background: transparent;
+}
+
+ul img{
+    width: 20px;
+}
+/* ლოგო */
+h1 {
+    font-size: 40px;
+}
+
+h1 img{
+    width: 40px;
+}
+
+/* მთავარი */
+main {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.hotel p img{
+    width:15px;
+}
+
+section#hotels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hotel {
+    color:#6b6a6a;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #d7d6d6;
+    transition: ease .40s;
+}
+.hotel:hover {
+    z-index: 2;
+    border: 1px solid #5496fa;
+    transform: scale(1.1);
+}
+
+.hotel img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hotel p {
+    margin: 10px 0;
+}
+
+
+/* footer */
+footer {
+    background-color: #549cfa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {margin: 5px 0;}
+

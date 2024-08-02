@@ -1,0 +1,101 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "popins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ვქმნი css ცვლადებს, ფერებისთვის და ტექსტის ზომებისთვის */
+:root{
+    --text-color: #fff;
+    --second-color: #5a7184;
+    --main-color: #5496fa;
+    --big-font: 96px;
+    --h2-font: 48px;
+    --p-font: 20px;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 30px 18%;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color)
+}
+
+.navbar{
+    display: flex; /*ალაგებს nav-bar-ის ელემენტებს ჰორიზონტალურ ხაზზე*/
+    margin-left: 300px;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 21px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover{
+    background: var(--text-color);
+    color: #fff;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+
+section{
+    padding-left: 250px;
+    padding-top: 40px;
+}
+
+.home{
+    height: 100vh;
+    background: url(mountains.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    line-height: 100px;
+    color: var(--text-color);
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.home-text p{
+    color: #ffffffcc;
+    font-size: 20px;
+    font-weight: 400;
+    line-height:38px;
+    margin-bottom: 50px;
+}
+
+.home-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: #ffffffcc;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.home-btn:hover{
+    background: var(--text-color);
+    transform: scale(1.1);
+}
