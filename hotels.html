@@ -3,119 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Listings</title>
+    <title>GeoTours | Hotels</title>
     <link rel="stylesheet" href="hotels.css">
     <link rel="icon" href="georgia (1).png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--rel="preconnect" ეუბნება კომპიუტერს რომ დაამყაროს წინასწარი კავშირი სერვერთან - fonts.googleapis.com. ეს კეთდება იმისთვის რომ შემცირდეს შეფერხებები საიტის ატვირთვისას-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--crossorigin აკონკრეტებს რომ მოცემულ სერვერთან გაგზავნილი მოთხოვნები უნდა შესრულდეს CORS(Cross-Origin Resource Sharing) მექანიზმით. მოცემული მექანიზმი უზრუნელყოფს უსაფრთხოებას, როდესაც ჩვენ ვიღებთ ინფორმაციას სხვა სერვერისგან-->
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><!--მოცემული ელემენტით ვტვირთავთ ტექსტის სტილის ფაილებს-->
 </head>
 <body>
-    <header>
-        <h1><a href="index2.html">GeoTours<img src="georgia (2).png"></a></h1>
+    <header id="header1">
+        <h1><a href="index.html">GeoTours<img src="georgia (2).png"></a></h1>
         <ul>
-            <li><a href="index2.html">Home</a></li>
-            <li><a href="">Tours</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
             <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="">Contact us</a></li>
-            <li title="Account"><a href="" id="user"><img src="user (2).png"></a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li title="Account" ><a href="login.html" id="user"><img src="user (2).png"></a></li>
         </ul>
     </header>
     
     <main>
-        <h2>Discover Your Perfect Stay: Explore Top Hotels in Georgia</h2>
-        <hr>
+        <header>
+            <h2><img src="hotel-bed.png"> Explore Top Hotels in Georgia! </h2>
+            <hr>
+        </header>
         <section id="hotels">
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268531708593176660/zugdidi.jpg?ex=66acc3b7&is=66ab7237&hm=3798daca7df1cece32ddb7e19fd509de92ebfff08b26f09057e2d419cdf88e97&" alt="Hotel in Zugdidi">
-                <p><img src="location.png">Zugdidi</p>
+                <img src="zugdidi hotel.jpg" alt="hotel in zugdidi" class="hotel-img">
+                <h3>The Velvet Valley Inn</h3>
+                <p><img src="zugdidi hotel.jpg">Zugdidi</p>
                 <p>Price: $200 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532707374268516/40024f7cbd66fa8e.jpg?ex=66acc4a5&is=66ab7325&hm=a6ec6d360455386b263ae826b13b73d8b58c85c0a77a8ff44b747a89a8ce4efd&" alt="Hotel in Kakheti">
-                <p><img src="location.png">Kakheti</p>
+                <img src="spa.jpg" alt="Hotel in Telavi" class="hotel-img">
+                <h3>Sunset Vista Hotel</h3>
+                <p><img src="location.png">Telavi</p>
                 <p>Price: $150 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532937226457149/e7ab8eb74d543c67.jpg?ex=66acc4dc&is=66ab735c&hm=93fc9d43380622d18d684066590f85358bab9fa0a5fa40bf2b6ecff4a99918b7&" alt="Hotel in Batumi">
+                <img src="batumi h.jpg" alt="Hotel in Batumi" class="hotel-img">
+                <h3>The Royal Oak Inn</h3>
                 <p><img src="location.png">Batumi</p>
                 <p>Price: $250 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268531708593176660/zugdidi.jpg?ex=66acc3b7&is=66ab7237&hm=3798daca7df1cece32ddb7e19fd509de92ebfff08b26f09057e2d419cdf88e97&" alt="Hotel in Zugdidi">
-                <p><img src="location.png">Zugdidi</p>
+                <img src="kutaisi hotel.jpg" alt="Hotel in kutaisi" class="hotel-img">
+                <h3>Golden Peaks Resort</h3>
+                <p><img src="location.png">Kutaisi</p>
+                <p>Price: $300 per week</p>
+                <a href="login.html"><button>Booking</button></a>
+            </div>
+
+            <div class="hotel">
+                <img src="axalcixe.jpg" alt="Hotel in Zugdidi" class="hotel-img">
+                <h3>Crystal Cove Lodge</h3>
+                <p><img src="location.png">Akhaltsikhe</p>
                 <p>Price: $200 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268531708593176660/zugdidi.jpg?ex=66acc3b7&is=66ab7237&hm=3798daca7df1cece32ddb7e19fd509de92ebfff08b26f09057e2d419cdf88e97&" alt="Hotel in Zugdidi">
-                <p><img src="location.png">Zugdidi</p>
-                <p>Price: $200 per week</p>
-            </div>
-
-            <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532937226457149/e7ab8eb74d543c67.jpg?ex=66acc4dc&is=66ab735c&hm=93fc9d43380622d18d684066590f85358bab9fa0a5fa40bf2b6ecff4a99918b7&" alt="Hotel in Batumi">
-                <p><img src="location.png">Batumi</p>
+                <img src="ambrolauri h.jpg" alt="Hotel in amblorauli" class="hotel-img">
+                <h3>Harmony Bay Retreat</h3>
+                <p><img src="location.png">Ambrolauri</p>
                 <p>Price: $250 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268531708593176660/zugdidi.jpg?ex=66acc3b7&is=66ab7237&hm=3798daca7df1cece32ddb7e19fd509de92ebfff08b26f09057e2d419cdf88e97&" alt="Hotel in Zugdidi">
-                <p><img src="location.png">Zugdidi</p>
+                <img src="ozurgeti h.jpg" alt="Hotel in ozurgeti" class="hotel-img">
+                <h3>The Majestic Pines Hotel</h3>
+                <p><img src="location.png">Ozurgeti</p>
                 <p>Price: $200 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532707374268516/40024f7cbd66fa8e.jpg?ex=66acc4a5&is=66ab7325&hm=a6ec6d360455386b263ae826b13b73d8b58c85c0a77a8ff44b747a89a8ce4efd&" alt="Hotel in Kakheti">
-                <p><img src="location.png">Kakheti</p>
+                <img src="telavi.jpg" alt="Hotel in Kakheti" class="hotel-img">
+                <h3>Serenity Sands Resort</h3>
+                <p><img src="location.png">Telavi</p>
                 <p>Price: $150 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532937226457149/e7ab8eb74d543c67.jpg?ex=66acc4dc&is=66ab735c&hm=93fc9d43380622d18d684066590f85358bab9fa0a5fa40bf2b6ecff4a99918b7&" alt="Hotel in Batumi">
-                <p><img src="location.png">Batumi</p>
+                <img src="gori.jpg" alt="Hotel in =gori" class="hotel-img">
+                <h3>Eagle's Nest Lodge</h3>
+                <p><img src="location.png">Gori</p>
                 <p>Price: $250 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268531708593176660/zugdidi.jpg?ex=66acc3b7&is=66ab7237&hm=3798daca7df1cece32ddb7e19fd509de92ebfff08b26f09057e2d419cdf88e97&" alt="Hotel in Zugdidi">
-                <p><img src="location.png">Zugdidi</p>
+                <img src="mtskheta.jpg" alt="Hotel in Mtskheta" class="hotel-img">
+                <h3>Starlight Haven</h3>
+                <p><img src="location.png">Mtskheta</p>
                 <p>Price: $200 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532707374268516/40024f7cbd66fa8e.jpg?ex=66acc4a5&is=66ab7325&hm=a6ec6d360455386b263ae826b13b73d8b58c85c0a77a8ff44b747a89a8ce4efd&" alt="Hotel in Kakheti">
-                <p><img src="location.png">Kakheti</p>
+                <img src="Tbilisi.jpeg" alt="Hotel in tbilisi" class="hotel-img">
+                <h3>Azure Sky Suites</h3>
+                <p><img src="location.png">Tbilisi</p>
                 <p>Price: $150 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
 
             <div class="hotel">
-                <img src="https://cdn.discordapp.com/attachments/1119327807777022106/1268532937226457149/e7ab8eb74d543c67.jpg?ex=66acc4dc&is=66ab735c&hm=93fc9d43380622d18d684066590f85358bab9fa0a5fa40bf2b6ecff4a99918b7&" alt="Hotel in Batumi">
+                <img src="batumi.jpg" alt="Hotel in Batumi" class="hotel-img">
+                <h3>The Grand Horizon Inn</h3>
                 <p><img src="location.png">Batumi</p>
                 <p>Price: $250 per week</p>
+                <a href="login.html"><button>Booking</button></a>
             </div>
         </section>
     </main>  
  <footer>
-        <section id="contact">
             <h2>Contact Us</h2>
             <p>If you have any questions or need more information, please reach out to us:</p>
             <ul>
                 <li>Email: <a href="GeoTours@gmail.com">GeoTours@gmail.com</a></li>
                 <li>Phone: 511 12 72 42</li>
             </ul>
-        </section>
-        
-        <section id="copyright">
             <p>&copy; 2024 GeoTours. All rights reserved.</p>
-        </section>
-
-        <section id="credits">
             <p>Made by: Ani Razmadze, Mate Chikaidze, Zura Gvalia, Dachi Alania</p>
-        </section>
     </footer>
 </body> 
 </html> 

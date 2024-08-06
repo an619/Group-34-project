@@ -1,101 +1,108 @@
-
+/* * სელექტორის საშუალებით, ინიშნება ყველა ელემენტი დოკუმეტში */
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "popins", sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-/* ვქმნი css ცვლადებს, ფერებისთვის და ტექსტის ზომებისთვის */
-:root{
-    --text-color: #fff;
-    --second-color: #5a7184;
-    --main-color: #5496fa;
-    --big-font: 96px;
-    --h2-font: 48px;
-    --p-font: 20px;
-}
-
-header{
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    padding: 30px 18%;
-}
-
-.logo{
-    font-size: 35px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: var(--text-color)
-}
-
-.navbar{
-    display: flex; /*ალაგებს nav-bar-ის ელემენტებს ჰორიზონტალურ ხაზზე*/
-    margin-left: 300px;
-}
-
-.navbar a{
-    color: var(--text-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    padding: 10px 21px;
-    border-radius: 4px;
-    transition: ease .40s;
-}
-
-.navbar a:hover{
-    background: var(--text-color);
+    font-family: 'Poppins', sans-serif;
     color: #fff;
-    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
-    border-radius: 4px;
 }
 
-section{
-    padding-left: 250px;
-    padding-top: 40px;
+/* უკანა ფონის სურათი */
+
+body {
+    height: 100vh; /*ელემენტის სიმაღლე დაყენებულია ბრაუზერის ფანჯრის ხილული ნაწილის სიმაღლის 100%-ზე.*/
+    background-image: url("mountains.jpg");
+    background-size: 100%; /*ვაყენებთ ფონის ზომას, მშობელი ელემენტის ზომის 100%ზე*/
+    background-position: center; /*ვაყენებთ ფონს ელემენტის ცენტრში*/ 
+    animation: shrink 5s; /*ვიყენებთ მოცემულ ელემენტზე shrink ანიმაციას რომელიც გრძელდება 5 წამი*/
+  }
+
+@keyframes shrink { /*@keyframes არის საკვანძო სიტყვა რომლითაც ჩვენ ვქმნით ანიმაციას, shrink კი არის ანიმაციის სახელი*/
+    0% {
+      background-size: 120%; /*ანიმაციის დასაწყისში ფონის ზომა არის მშობელი ელემენტის ზომის 120%-ზე*/
+    }
+    100% {
+      background-size: 100%;/*ანიმაციის დასასრულში ფონის ზომა ხდება მშობელი ელემენტის ზომის 100%*/
+    }
 }
 
-.home{
-    height: 100vh;
-    background: url(mountains.jpg);
-    background-size: cover;
-    background-position: center;
-    display: grid;
+/* ნავიგაციის მენიუ */
+
+header {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 270px;
+    text-align: center;
+} 
+
+header ul {
     align-items: center;
+    padding-left: 260px;
+    list-style: none;
+    display: flex;
 }
 
-.home-text h1{
-    font-size: var(--big-font);
-    line-height: 100px;
-    color: var(--text-color);
-    font-family: 'Paytone One', sans-serif;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+a{
+    text-decoration: none;
 }
 
-.home-text p{
-    color: #ffffffcc;
+ul li a{
+    padding: 10px 20px;
     font-size: 20px;
-    font-weight: 400;
-    line-height:38px;
-    margin-bottom: 50px;
+    transition: ease .40s;
+    text-decoration: none;
 }
 
-.home-btn{
-    display: inline-block;
-    font-size: 16px;
-    padding: 15px 30px;
-    background: #ffffffcc;
-    color: var(--main-color);
-    border-radius: 4px;
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+#user:hover{
+    background-color: transparent;
+}
+
+ul img{
+    width: 20px;
+}
+
+/* ლოგო */
+h1 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 img{
+    width: 40px;
+}
+
+/* გვერდის მთავარი ნაწილი */
+main{
+    padding-left: 260px;
+
+}
+
+h2 {
+    line-height: 80px;
+    font-size: 90px;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 3px;
+}
+
+p {
+   line-height: 30px;
+   font-size: 20px;
+   color: rgba(255, 255, 255, 0.836);
+}
+
+section a {
+    color: rgb(82, 126, 246);
+    background-color: rgba(229, 229, 232, 0.797);
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    border-radius: 2px;
     transition: ease .40s;
 }
 
-.home-btn:hover{
-    background: var(--text-color);
-    transform: scale(1.1);
+section a:hover {
+    background-color: #fff;
 }

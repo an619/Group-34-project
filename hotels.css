@@ -1,42 +1,41 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://cdn.discordapp.com/attachments/1119327807777022106/1268541555791233146/background.jpg?ex=66accce3&is=66ab7b63&hm=a89a77d3f61b14bd7f47d8687a715a25988bb6e3bb14203165df1c9c16653d53&');
-    background-size: cover;
-    background-position: center;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
 }
 
-header {
+/* ნავიგაციის მენიუ */
+#header1 {
     z-index: 3;
     position: fixed;
     padding-top: 15px;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 270px;
     text-align: center;
     background-color: #5496fa;
-    padding-right: 250px;
+    padding-right: 200px;
 }
 
-header h1 {
+#header1 h1 {
     margin-top: 15px;
     font-size: 40px;
 }
 
-header h1 a{
+#header1 h1 a{
     text-decoration: none;
     color: #000000;
 }
 
-header ul {
+#header1 ul {
     margin-top: 30px;
-    padding-left: 250px;
+    padding-left: 260px;
     list-style: none;
     display: flex;
 }
 
-header ul li a{
+#header1 ul li a{
     color: #000000;
     padding: 10px 20px;
     font-size: 20px;
@@ -54,6 +53,7 @@ header ul li a:hover{
     background: transparent;
 }
 
+
 ul img{
     width: 20px;
 }
@@ -68,38 +68,64 @@ h1 img{
 
 /* მთავარი */
 main {
-    padding-top: 150px;
+    padding-top: 120px;
     text-align: center;
 }
 
 main h2{
     text-align: center;
     color: #000000;
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    letter-spacing: 1px;
     padding-bottom: 40px;
     font-size: 30px;
+    padding-top: 20px;
+}
+
+hr{
+    margin-bottom: 50px;
+}
+
+main h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 img{
+    width: 60px;
+    padding: 10px;
 }
 
 .hotel p img{
-    width:15px;
+    width: 16px
 }
 
 section#hotels {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* მოცემული დეკლარაციით ჩვენ ვეუბნებით ბრაუზერს რომ გადაიტანოს კონტეინერის ელენეტები ახალ ხაზზე თუ მიმდინარე ხაზზე ვერ ეტევიან */
     justify-content: center;
 }
+
+.hotel-img{
+    height: 200px;
+}
+
 
 .hotel {
     color:#6b6a6a;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px;
+    padding: 10px;
     width: 300px;
+    height: 380px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid #d7d6d6;
     transition: ease .40s;
 }
+ 
 .hotel:hover {
     z-index: 2;
     border: 1px solid #5496fa;
@@ -116,13 +142,31 @@ section#hotels {
     margin: 10px 0;
 }
 
+.hotel h3{
+    color: #000000;
+}
 
-/* footer */
+button{
+    background-color: #5496fa;
+    color:#fff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    transition: ease 0.4s;
+}
+
+button:hover{
+    background-color: #7cadf7;
+    transform: scale(1.1);
+}
+
+/* საიტის ბოლო ნაწილი */
 footer {
     background-color: #549cfa;
     padding: 20px;
     text-align: center;
-    margin-top: 20px;}
+    margin-top: 20px;
+}
 
 footer h2 {
     margin-bottom: 10px;
@@ -146,5 +190,6 @@ footer ul {
     padding: 0;
 }
 
-footer li {margin: 5px 0;}
-
+footer li {
+    margin: 5px 0;
+}

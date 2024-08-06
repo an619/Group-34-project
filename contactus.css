@@ -1,0 +1,155 @@
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ნავიგაციის მენიუ */
+#header1 {
+    z-index: 3;
+    position: fixed; /*აფიქსირებს ელემენტს ერთ კონკრეტულ ადგილას, რაც იმას ნიშნავს რომ დასქროლვისას ელემენტი არ შეიცვლის მდგომარეობას*/
+    top: 0; /*ვაკონკრეტებთ რომ ელემენტი უნდა იყოს დაფიქსირებული გვერდის თავში*/
+    padding-top: 15px;
+    display: flex; /*ვანიჭებთ #header1 კონტეინერ ელემენტის შვილებს მოქნილობას, რაც ნიშნავს იმას რომ მოცემულ ელემენტებზე შეგვეძლება გამოვიყენოთ სხვადასხვა განლაგების კუთვნილებები, როგორიცაა: align-items, justify-content, flex-direction ... თუ display: flex;-ის შემდეგ განლაგების დეკლარაცია არ გვაქ გამოყენებული, მაშინ ბრაუზერის მიერ default დეკლარაციად გამოიყენება flex-direction:"row", ანუ ელემენტები დაეწყობიან ერთ მწკრივში*/
+    text-align: center;
+    background-color: #5496fa;
+    width: 100%;
+}
+
+#header1 h1 {
+    padding-left: 270px;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+#header1 h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#header1 ul {
+    margin-top: 30px;
+    padding-left: 260px;
+    list-style: none;
+    display: flex;
+}
+
+#header1 ul li a {
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: ease .40s; /*
+    transition არის კუთვნილება რომლითაც ჩვენ განვსაზღვრავთ თუ როგორი გადასვლა ექნება ელემენტს ერთი მდგომარეობიდან მეორე მდგომარეობაში.(მაგ. hover-ის გამოყენებისას)
+    ease - არის მნიშვნელობა რომლითაც ჩვენ განვსაზღვავთ თუ როგორ შეიცვლება ელემენტის გადასვლის სიჩქარე. მოცემული მნიშვნელობით ჩვენ ვუთითებთ ბრაუზერს რომ გადასვლა თავიდან უნდა დაიწყოს სწარაფად შემდეგ დანელდეს და ბოლოს ისევ ასწრაფდეს.
+    .40s- ეს კი არის გადასვლის ხანგრძლივობა, ანუ რამდენ ხანს გაგრძელდება ელემენტის ერთი მდომარეობიდან მეორე მდგომარეობაში გადასვლა*/ 
+    text-decoration: none;
+}   
+
+header ul li a:hover{ /*სელექტორში hover-ის მითითებით ჩვენ შეგვიძლია ელემენტს მივანიჭოთ რაღაც კონკრეტული სტილი ,მაშინ როდესაც მას ზემოდან მაუსს გადავატარებთ*/
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+#user:hover {
+    background-color: transparent;
+}
+
+ul img {
+    width: 20px;
+}
+/* ლოგო */
+h1 {
+    font-size: 40px;
+}
+
+h1 img {
+    width: 40px;
+}
+
+/* ფორმა */
+main{
+    margin-top:200px;
+    margin-bottom: 100px;
+}
+
+section {
+    width: 380px;
+    margin: 20px auto; /* 20px აყენებს margin-ს ელემენტის ზევით და ქვემოთ 20 პიქსელზე, ხოლო auto მნიშვნელობით ბრაუზერს საშუალება ეძლევა ავტომატურად გამოთვალოს და თანაბრად გადაანაწილოს სივრცეები ელემენტის მარჯვნივ და მარცხნივ. ამგვარად ელემენტი ჰორიზონტალური ხაზის შუაში სწორდება. */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgb(225, 222, 222); /* 10px - განსაზღვრავს ელემენტის ჩრდილს მარჯნივ , რომლის ზომა იქნება 10 პიქსელი, 20px - განსაზღვრავს ელემენტის ჩრდილს დაბლა, რომლის ზომა იქნება 20 პიქსელი, 30px - მოცემული მნიშვნელობა კი განსაძღვრავს ელემენტის ჩრდილის დაბინდვას, ანუ რაც უფრო მაღალია მოცემული მნიშვნელობა, მით უფრო ბუნდოვანი იქნება ჩრდილი. */
+    border: 1px solid rgb(220, 220, 220);
+}
+
+main h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    border-radius: 5px;
+    width: 200px;
+    border: 1px solid rgb(197, 199, 199);
+}
+
+input, textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+
+button {
+    width: 250px;
+    padding: 12px;
+    background-color: #5496fa;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #79adfb;
+}
+
+
+/* საიტის ბოლო ნაწილი */
+footer {
+    background-color: #549cfa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+}

@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* ნავიგაციის მენიუ */
+header {
+    padding-top: 15px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding-left: 270px;
+    text-align: center;
+    background-color: #5496fa;
+    padding-right: 200px;
+}
+
+header h1 {
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header ul {
+    margin-top: 30px;
+    padding-left: 260px;
+    list-style: none;
+    display: flex;
+}
+
+header ul li a{
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: ease .40s;
+    text-decoration: none;
+}   
+
+header ul li a:hover{
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+#user:hover{
+    background: transparent;
+}
+
+ul img{
+    width: 20px;
+}
+/* ლოგო */
+h1 {
+    font-size: 40px;
+}
+
+h1 img{
+    width: 40px;
+}
+
+/* ფორმა */
+
+main{
+    margin-top:230px;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    width: 250px;
+    border: 1px solid rgb(197, 199, 199);
+}
+
+.container{
+    text-align: center;
+    margin-top: 120px;
+    border: 1px solid rgb(220, 220, 220);
+    background-color: #fefefead;
+    width: 400px;
+    height: 350px;
+    margin-left: 535px;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 120px;
+    box-shadow: 10px 20px 30px rgb(225, 222, 222);
+}
+
+
+
+main p{
+    color: black;
+}
+
+main h2{
+    color: black;
+    font-size: 30px;
+}
+
+#submit{
+    background-color: #5496fa;
+    color:rgb(255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+#submit:hover{
+    background-color: #79adfb;
+}
+
+.container a{
+    color: #5496fa;
+    width: 20px;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+
+/* footer */
+footer {
+    background-color: #549cfa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+}
