@@ -27,8 +27,9 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 5px;
-    padding-left: 270px;
+    justify-content: center;
     text-align: center;
 } 
 
@@ -37,6 +38,7 @@ header ul {
     padding-left: 260px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 a{

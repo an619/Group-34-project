@@ -13,12 +13,13 @@ body {
     padding-top: 15px;
     display: flex; /*ვანიჭებთ #header1 კონტეინერ ელემენტის შვილებს მოქნილობას, რაც ნიშნავს იმას რომ მოცემულ ელემენტებზე შეგვეძლება გამოვიყენოთ სხვადასხვა განლაგების კუთვნილებები, როგორიცაა: align-items, justify-content, flex-direction ... თუ display: flex;-ის შემდეგ განლაგების დეკლარაცია არ გვაქ გამოყენებული, მაშინ ბრაუზერის მიერ default დეკლარაციად გამოიყენება flex-direction:"row", ანუ ელემენტები დაეწყობიან ერთ მწკრივში*/
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #5496fa;
     width: 100%;
 }
 
 #header1 h1 {
-    padding-left: 270px;
     margin-top: 15px;
     font-size: 40px;
 }
@@ -33,6 +34,7 @@ body {
     padding-left: 260px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #header1 ul li a {

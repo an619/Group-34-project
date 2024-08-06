@@ -12,10 +12,10 @@ body {
     padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 270px;
+    width: 100%;
     text-align: center;
+    justify-content: center;
     background-color: #5496fa;
-    padding-right: 200px;
 }
 
 #header1 h1 {
@@ -29,6 +29,8 @@ body {
 }
 
 #header1 ul {
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 30px;
     padding-left: 260px;
     list-style: none;

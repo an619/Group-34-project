@@ -11,9 +11,11 @@ header {
     position: fixed;
     top: 0;
     display: flex;
-    padding-left: 270px;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     background-color: #5496fa;
+    width: 100%;
     padding-right: 200px;
 }
 
@@ -32,6 +34,7 @@ header ul {
     padding-left: 260px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 header ul li a{
@@ -79,15 +82,13 @@ input {
 
 .container{
     text-align: center;
-    margin-top: 120px;
+    margin: 120px auto;
     border: 1px solid rgb(220, 220, 220);
     background-color: #fefefead;
     width: 400px;
     height: 350px;
-    margin-left: 535px;
     border-radius: 10px;
     color: black;
-    margin-bottom: 120px;
     box-shadow: 10px 20px 30px rgb(225, 222, 222);
 }
 

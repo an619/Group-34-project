@@ -11,10 +11,11 @@ body {
     position: fixed;
     padding-top: 15px;
     display: flex;
-    padding-left: 270px;
     text-align: center;
+    flex-wrap: wrap;
     background-color: #5496fa;
-    padding-right: 200px;
+    width: 100%;
+    justify-content: center;
 }
 
 #header1 h1 {
@@ -28,6 +29,7 @@ body {
 }
 
 #header1 ul {
+    flex-wrap: wrap;
     margin-top: 30px;
     padding-left: 260px;
     list-style: none;
